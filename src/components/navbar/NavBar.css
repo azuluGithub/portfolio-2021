@@ -1,0 +1,118 @@
+.navbar {
+    height: 60px;
+    width: 100vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff;
+    top: 0;
+    position: fixed;
+    z-index: 5;
+}
+
+.navbar-wrapper {
+    height: 100%;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* left: logo */
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo-left {
+    border: 2px solid dimgray;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    font-weight:bold;
+    font-size: 14px;
+}
+
+.navbar-logo-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navbar-logo-right-top {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.navbar-logo-right-bottom {
+    font-weight: 400;
+    font-size: 11px;
+    color: #888;
+    letter-spacing: 2px;
+}
+
+/* right: links*/
+.navbar-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: 500;
+}
+
+.navbar-link {
+    color: #333;
+    font-size: 14px;
+    margin-left: 20px;
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 639px) {
+    .navbar-wrapper {
+        padding: 0 10px;
+    }
+
+    .navbar-logo-left {
+        display: none;
+    }
+    .navbar-logo-right-top {
+        font-size: 12px;
+    }
+    
+    .navbar-logo-right-bottom {
+        letter-spacing: 1px;
+        font-size: 10px;
+    }
+    .navbar-link {
+        font-size: 12px;
+        margin-left: 10px;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .navbar-wrapper {
+        padding: 0 8px;
+    }
+    .navbar-logo-left {
+        display: none;
+    }
+
+    .navbar-logo-right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .navbar-logo-right-top {
+        font-size: 11px;
+    }
+
+    .navbar-logo-right-bottom {
+        display: none;
+    }
+    .navbar-link {
+        font-size: 11px;
+        margin-left: 10px;
+    }
+}

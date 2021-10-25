@@ -1,0 +1,238 @@
+.contacts {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-color:rgba(255, 99, 71, 0.1);
+}
+
+.contacts-heading {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.8em;
+    text-align: center;
+    font-weight: bold;
+    margin: 60px 0 20px 0;
+}
+
+.contacts-heading-left {
+    color: #888;
+}
+
+.contacts-heading-right {
+    color: rgb(189, 189, 189);
+}
+
+.contacts-wrapper {
+    margin: auto;
+    width: calc(100vw - 80px);
+    display: flex;
+}
+
+.contacts-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.contacts-left-heading {
+    font-size: 2em;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.contact-left-box {
+    margin-bottom: 20px;
+}
+
+.contact-icon {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.contact-linkedin {
+    color:rgb(34, 180, 136);
+}
+
+.contact-github {
+    color:rgb(255, 174, 0);
+}
+
+.contact-mail {
+    color:tomato;
+}
+
+.contact-phone {
+    color:rgb(30, 177, 221);
+}
+
+.contact-address {
+    color:crimson;
+}
+
+.contact-label {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    color: #444;
+}
+
+.contacts-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts-right-message {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.form {
+    width: 60%;
+    font-family: 'Segoe UI';
+}
+
+.form-label {
+    color: rgba(138, 136, 136, 0.87);
+    font-size: 13px;
+}
+
+.form-input {
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #ddd;
+    width: 100%;
+    padding: 6px 0;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.form-input:focus {
+    border-bottom: 2px solid #aaa;
+}
+
+.form-text-area {
+    width: calc(100% - 12px);
+    height: 100px;
+    padding: 6px;
+    outline: none;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    background-color: #fff;
+}
+
+.form-button {
+    padding: 10px 30px;
+    font-weight: bold;
+    border: 1px solid rgba(255, 99, 71);
+    font-size: 11px;
+    outline: none;
+    color: #fff;
+    background-color: rgba(255, 99, 71);
+    transition: all 1s ease;
+}
+
+.form-button-disabled {
+    padding: 10px 30px;
+    font-weight: bold;
+    border: 1px solid #eee;
+    font-size: 11px;
+    outline: none;
+    color: #aaa;
+    background-color: #eee;
+    transition: all 1s ease;
+}
+
+.form-button:hover {
+    cursor: pointer;
+    color: #aaa;
+    background-color: #eee;
+    border: 1px solid #eee;
+}
+
+.success-msg {
+    color: #fff;
+    background-color: rgb(60, 202, 155);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.error-msg {
+    color: rgb(235, 85, 85);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 639px) {
+    .contacts-heading {
+        margin: 70px 0 20px 0;
+    }
+    .contacts-wrapper {
+        width: calc(100vw - 40px);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .contacts-left {
+        width: 100%;
+        height: auto;
+    }
+    
+    .contacts-left-heading {
+        font-size: 18px;
+        margin-bottom: 15px;
+        color: dimgray;
+    }
+    .contacts-inner-box {
+        width: 100%;
+    }
+    .contact-left-box {
+        margin-bottom: 8px;
+    }
+    .contacts-right {
+        width: 80%;
+    }
+    .contacts-right-message {
+        display: none;
+    }
+    
+    .form {
+        width: 100%;
+    }
+    
+    .form-input {
+        margin-bottom: 6px;
+    }
+    .form-text-area {
+        width: calc(100% - 12px);
+        height: 60px;
+        padding: 4px;
+        margin: 8px 0;
+    }
+    .form-button {
+        padding: 10px;
+        font-size: 10px;
+    }
+    
+    .form-button-disabled {
+        padding: 10px;
+        font-size: 10px;
+    }
+    .success-msg {
+        padding: 8px;
+        margin-bottom: 10px;
+    }
+    
+    .error-msg {
+        margin-bottom: 10px;
+    }
+}

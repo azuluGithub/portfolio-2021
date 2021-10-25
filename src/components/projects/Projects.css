@@ -1,0 +1,124 @@
+.projects-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-wrapper {
+    height: 100%;
+    display: flex;
+    transform: translateX(0vw);
+    transition: all 1s ease;
+}
+
+.single-project {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    background-color: rgba(125, 172, 103, 0.1);
+}
+
+.project-left {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-img {
+    height: 90%;
+    width: 90%;
+    object-fit: contain;
+}
+
+.project-right {
+    flex: 1;
+}
+
+.project-right-wrapper {
+    width: 85%;
+}
+
+.project-title {
+    font-weight: bold;
+    font-size: 24px;
+    font-family: sans-serif;
+    margin-bottom: 5px;
+    color: rgba(124, 123, 123, 0.904);
+}
+
+.project-sub-title {
+    font-size: 13px;
+    color: rgb(192, 191, 191);
+    margin-bottom: 20px;
+    letter-spacing: 4px;
+}
+
+.project-purpose {
+    font-size: 13px;
+    font-family: 'Segoe UI';
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.project-tech-stack,
+.project-description {
+    font-size: 13px;
+    color: rgb(155, 154, 154);
+    font-family: 'Segoe UI';
+    margin-bottom: 20px;
+}
+
+
+.project-demo {
+    margin: 20px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    color: #444;
+}
+
+.project-arrow-box {
+    background-color: rgba(125, 172, 103);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    opacity: 0.5;
+    z-index: 2;
+}
+
+.project-arrow-box:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.project-arrow-box-left {
+    left: 10px;
+}
+
+.project-arrow-box-right {
+    right: 10px;
+}
+
+.project-arrow {
+    font-size: 25px;
+    color: #fff;
+}
+
+@media only screen and (max-width: 639px) {
+    .project-img {
+        height: 75%;
+        width: 75%;
+        object-fit: cover;
+    }
+}
